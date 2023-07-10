@@ -15,7 +15,8 @@
     {
       "root": "packageA",
       "pages": [
-        "pageA/pageA"
+        "pageA/pageA",
+        "pageB/pageB"
       ]
     } 
   ]

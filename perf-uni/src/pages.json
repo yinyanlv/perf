@@ -28,8 +28,13 @@
 					"style": {
 						"navigationBarTitleText": "分包页"
 					}
+				},
+				{
+					"path": "pageB/pageB",
+					"style": {
+						"navigationBarTitleText": "分包页B"
+					}
 				}
-			
 			]
 		} 
 	]
