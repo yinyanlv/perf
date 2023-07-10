@@ -1,17 +1,20 @@
 <script>
 	export default {
-		onLaunch: function() {
-			console.log('App Launch')
-		},
-		onShow: function() {
-			console.log('App Show')
-		},
-		onHide: function() {
-			console.log('App Hide')
+		onLaunch() {
+			console.log('on launch')
 		}
 	}
 </script>
 
 <style>
-	/*每个页面公共css */
+.container {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	padding: 200rpx 0;
+	box-sizing: border-box;
+} 
 </style>
+

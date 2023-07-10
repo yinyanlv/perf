@@ -1,9 +1,8 @@
 <template>
-	<view class="content">
-		<image class="logo" src="/static/logo.png"></image>
-		<view>
-			<text class="title">{{title}}</text>
-		</view>
+	<view class="container">
+		<view class="content">{{content}}</view>
+		<button class="btn" @tap="goToLog" type="primary">前往日志页</button>
+		<button class="btn" @tap="goToPageA" type="primary">前往分包页</button>
 	</view>
 </template>
 
@@ -11,39 +10,30 @@
 	export default {
 		data() {
 			return {
-				title: 'Hello'
+				content: 'Hello World'
 			}
 		},
-		onLoad() {
-
-		},
 		methods: {
-
+			goToLog() {
+				uni.navigateTo({
+					url: '/pages/logs/logs'
+				})
+			},
+			goToPageA() {
+				uni.navigateTo({
+					url: '/packageA/pageA/pageA'
+				})
+			}
 		}
 	}
 </script>
 
 <style>
-	.content {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-	}
+.content {
+  margin-top: 40rpx;
+}
 
-	.logo {
-		height: 200rpx;
-		width: 200rpx;
-		margin: 200rpx auto 50rpx auto;
-	}
-
-	.text-area {
-		display: flex;
-		justify-content: center;
-	}
-
-	.title {
-		font-size: 36rpx;
-		color: #8f8f94;
-	}
+.btn {
+  margin-top: 40rpx;
+}
 </style>
