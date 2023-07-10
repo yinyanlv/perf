@@ -1,0 +1,7 @@
+.content {
+  margin-top: 40rpx;
+}
+
+.btn {
+  margin-top: 40rpx;
+}
