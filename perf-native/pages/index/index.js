@@ -16,5 +16,10 @@ Page({
     wx.navigateTo({
       url: '/packageA/pageA/pageA'
     })
+  },
+  goToPageB() {
+    wx.navigateTo({
+      url: '/packageA/pageB/pageB'
+    })
   }
 })

@@ -3,6 +3,7 @@
 		<view class="content">{{content}}</view>
 		<button class="btn" @tap="goToLog" type="primary">前往日志页</button>
 		<button class="btn" @tap="goToPageA" type="primary">前往分包页</button>
+		<button class="btn" @tap="goToPageB" type="primary">前往分包页B</button>
 	</view>
 </template>
 
@@ -22,6 +23,11 @@
 			goToPageA() {
 				uni.navigateTo({
 					url: '/packageA/pageA/pageA'
+				})
+			},			
+			goToPageB() {
+				uni.navigateTo({
+					url: '/packageA/pageB/pageB'
 				})
 			}
 		}

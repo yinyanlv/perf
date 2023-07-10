@@ -2,4 +2,5 @@
   <view class="content">{{content}}</view>
   <button class="btn" bindtap="goToLog" type="primary">前往日志页</button>
   <button class="btn" bindtap="goToPageA" type="primary">前往分包页</button>
+  <button class="btn" bindtap="goToPageB" type="primary">前往分包页B</button>
 </view>
